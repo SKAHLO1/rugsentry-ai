@@ -1,0 +1,19 @@
+{
+  "name": "@rugsentry/devvit-app",
+  "version": "1.0.0",
+  "description": "RugSentry AI — Devvit Reddit Integration",
+  "main": "src/main.tsx",
+  "scripts": {
+    "build": "devvit build",
+    "dev": "devvit playtest",
+    "upload": "devvit upload"
+  },
+  "dependencies": {
+    "@devvit/public-api": "0.12.24"
+  },
+  "devDependencies": {
+    "typescript": "5.8.3"
+  },
+  "keywords": [],
+  "license": "MIT"
+}

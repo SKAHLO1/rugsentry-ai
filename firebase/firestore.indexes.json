@@ -1,0 +1,71 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "flagged_posts",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "subreddit", "order": "ASCENDING" },
+        { "fieldPath": "flaggedAt", "order": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "flagged_posts",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "subreddit", "order": "ASCENDING" },
+        { "fieldPath": "status", "order": "ASCENDING" },
+        { "fieldPath": "flaggedAt", "order": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "flagged_posts",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "subreddit", "order": "ASCENDING" },
+        { "fieldPath": "riskScore.level", "order": "ASCENDING" },
+        { "fieldPath": "flaggedAt", "order": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "alerts",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "subreddit", "order": "ASCENDING" },
+        { "fieldPath": "createdAt", "order": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "alerts",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "subreddit", "order": "ASCENDING" },
+        { "fieldPath": "read", "order": "ASCENDING" },
+        { "fieldPath": "createdAt", "order": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "moderation_actions",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "subreddit", "order": "ASCENDING" },
+        { "fieldPath": "timestamp", "order": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "campaign_detections",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "subreddit", "order": "ASCENDING" },
+        { "fieldPath": "detectedAt", "order": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "token_analysis",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "analyzedAt", "order": "DESCENDING" }
+      ]
+    }
+  ],
+  "fieldOverrides": []
+}

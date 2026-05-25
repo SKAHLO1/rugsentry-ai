@@ -1,0 +1,25 @@
+{
+  "name": "rugsentry-ai",
+  "version": "1.0.0",
+  "description": "AI-Powered Anti-Scam Moderation Infrastructure for Reddit Communities",
+  "private": true,
+  "workspaces": [
+    "apps/dashboard",
+    "backend",
+    "shared"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:dashboard\"",
+    "dev:backend": "npm run dev --workspace=backend",
+    "dev:dashboard": "npm run dev --workspace=apps/dashboard",
+    "dev:devvit": "npm run dev --workspace=apps/devvit-app",
+    "build": "npm run build --workspaces",
+    "build:backend": "npm run build --workspace=backend",
+    "build:dashboard": "npm run build --workspace=apps/dashboard",
+    "lint": "npm run lint --workspaces --if-present",
+    "install:all": "npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
