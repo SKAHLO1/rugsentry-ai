@@ -1,11 +1,11 @@
 {
   "name": "@rugsentry/devvit-app",
   "version": "1.0.0",
-  "description": "RugSentry AI \u2014 Devvit Reddit Integration",
+  "description": "RugSentry AI — Devvit Reddit Integration",
   "main": "src/main.tsx",
   "scripts": {
-    "build": "node init && devvit build",
-    "dev": "node init && devvit playtest",
+    "build": "devvit build",
+    "dev": "devvit playtest",
     "upload": "devvit upload"
   },
   "dependencies": {

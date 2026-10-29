@@ -15,4 +15,3 @@ firebase-service-account.json
 .cache/
 coverage/
 firestore.rules
-config.bat

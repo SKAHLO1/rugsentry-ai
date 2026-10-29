@@ -9,13 +9,13 @@
     "shared"
   ],
   "scripts": {
-    "dev": "node init && concurrently \"npm run dev:backend\" \"npm run dev:dashboard\"",
-    "dev:backend": "node init && npm run dev --workspace=backend",
-    "dev:dashboard": "node init && npm run dev --workspace=apps/dashboard",
-    "dev:devvit": "node init && npm run dev --workspace=apps/devvit-app",
-    "build": "node init && npm run build --workspaces",
-    "build:backend": "node init && npm run build --workspace=backend",
-    "build:dashboard": "node init && npm run build --workspace=apps/dashboard",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:dashboard\"",
+    "dev:backend": "npm run dev --workspace=backend",
+    "dev:dashboard": "npm run dev --workspace=apps/dashboard",
+    "dev:devvit": "npm run dev --workspace=apps/devvit-app",
+    "build": "npm run build --workspaces",
+    "build:backend": "npm run build --workspace=backend",
+    "build:dashboard": "npm run build --workspace=apps/dashboard",
     "lint": "npm run lint --workspaces --if-present",
     "install:all": "npm install"
   },
